@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>F.B.A</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Главное меню */
+    #menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    /* Светящийся текст */
+    #menu h1 {
+      font-size: 70px;
+      color: pink;
+      text-shadow: 0 0 15px pink, 0 0 30px hotpink, 0 0 50px hotpink;
+      margin-bottom: 40px;
+      background: none; /* убираем фон */
+    }
+
+    /* Кнопка меню */
+    #menu button {
+      font-size: 28px;
+      padding: 15px 40px;
+      background-color: pink;
+      color: black;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #menu button:hover {
+      background-color: white;
+      color: black;
+      transform: scale(1.05);
+    }
+
+    /* Контент сайта */
+    #content {
+      display: none;
+    }
+    h5 {
+      font-size: 10px;
+      color: grey;
+    }
+
+    h2 {
+      font-size: 60px;
+      color: pink;
+      text-shadow: 0 0 10px pink, 0 0 20px hotpink;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: white;
+      background-color: pink;
+      border-radius: 20px;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    .italic-text {
+      font-style: italic;
+    }
+
+    .download-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 25px;
+      text-decoration: none;
+      background-color: pink;
+      color: black;
+      font-size: 20px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .download-link:hover {
+      transform: scale(1.05);
+      background-color: white;
+    }
+
+    img {
+      max-width: 80%;
+      margin-top: 20px;
+      border-radius: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Контейнер для изображения, заголовка и кнопки */
+    .image-container {
+      margin-bottom: 40px;
+    }
+
+    .image-container h1,
+    .image-container .download-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* Добавлен паддинг и выравнивание */
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Главное меню -->
+  <div id="menu">
+    <h1>Furry Beautiful Arts</h1>
+    <button onclick="showContent()"> &rarr;</button>
+  </div>
+
+  <!-- Основной сайт -->
+  <div id="content">
+    <h2 class="italic-text">furry beautiful arts</h2>
+
+    <!-- Обертка для каждой картинки -->
+    <div class="image-container">
+      <img src="IMG_8767.JPG" alt="Image 1">
+      <h1 class="italic-text">art by @POIUU</h1>
+      <a href="IMG_8767.JPG" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="IMG_8768.JPG" alt="Image 2">
+      <h1 class="italic-text">art by nn</h1>
+      <a href="IMG_8768.JPG" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="IMG_1.JPG" alt="Image 3">
+      <h1 class="italic-text">art by @Citrysofka</h1>
+      <a href="IMG_1.JPG" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="IMG_2.JPG" alt="Image 4">
+      <h1 class="italic-text">art by nn</h1>
+      <a href="IMG_2.JPG" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="IMG_3.JPG" alt="Image 5">
+      <h1 class="italic-text">art by @Lucawiouh</h1>
+      <a href="IMG_3.JPG" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="IMG_4.JPG" alt="Image 6">
+      <h1 class="italic-text">art by nn</h1>
+      <a href="IMG_4.JPG" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="1.jpg" alt="Image 7">
+      <h1 class="italic-text">art by nn</h1>
+      <a href="1.jpg" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="2.jpg" alt="Image 8">
+      <h1 class="italic-text">art by @VELK4N</h1>
+      <a href="2.jpg" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="3.jpg" alt="Image 9">
+      <h1 class="italic-text">art by nn</h1>
+      <a href="3.jpg" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="4.jpg" alt="Image 10">
+      <h1 class="italic-text">art by @DatKawaiiWolfy</h1>
+      <a href="4.jpg" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="5.jpg" alt="Image 11">
+      <h1 class="italic-text">art by LiLaiRa art studio</h1>
+      <a href="5.jpg" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="6.jpg" alt="Image 12">
+      <h1 class="italic-text">art by nn</h1>
+      <a href="6.jpg" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="7.jpg" alt="Image 13">
+      <h1 class="italic-text">art by nn</h1>
+      <a href="7.jpg" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="8.jpg" alt="Image 14">
+      <h1 class="italic-text">art by Luan Rey</h1>
+      <a href="8.jpg" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="9.jpg" alt="Image 15">
+      <h1 class="italic-text">art by nn</h1>
+      <a href="9.jpg" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="10.jpg" alt="Image 16">
+      <h1 class="italic-text">art by @tatujapa</h1>
+      <a href="10.jpg" download class="download-link">Open</a>
+    </div>
+
+    <div class="image-container">
+      <img src="11.jpg" alt="Image 17">
+      <h1 class="italic-text">art by @tatujapa</h1>
+      <a href="11.jpg" download class="download-link">Open</a>
+    </div>
+
+    <p>P.S. Over time, photographs, authors, and materials will be added to the site. Existing photographs, including those of the author of these drawings, will be updated. Therefore, "nn" is a temporary option that may change over time </p>
+  </div>
+
+  <script>
+    function showContent() {
+      document.getElementById('menu').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
