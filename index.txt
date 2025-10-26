@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>F.B.A</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Главное меню */
+    #menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    /* Светящийся текст */
+    #menu h1 {
+      font-size: 70px;
+      color: pink;
+      text-shadow: 0 0 15px pink, 0 0 30px hotpink, 0 0 50px hotpink;
+      margin-bottom: 40px;
+      background: none; /* убираем фон */
+    }
+
+    /* Кнопка меню */
+    #menu button {
+      font-size: 28px;
+      padding: 15px 40px;
+      background-color: pink;
+      color: black;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #menu button:hover {
+      background-color: white;
+      color: black;
+      transform: scale(1.05);
+    }
+
+    /* Контент сайта */
+    #content {
+      display: none;
+    }
+
+    h5 {
+      font-size: 10px;
+      color: grey;
+    }
+
+    h2 {
+      font-size: 60px;
+      color: pink;
+      text-shadow: 0 0 10px pink, 0 0 20px hotpink;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: white;
+      background-color: pink;
+      border-radius: 20px;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    .italic-text {
+      font-style: italic;
+    }
+
+    .download-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 25px;
+      text-decoration: none;
+      background-color: pink;
+      color: black;
+      font-size: 20px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .download-link:hover {
+      transform: scale(1.05);
+      background-color: white;
+    }
+
+    /* Контейнер для изображений */
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Расстояние между картинками */
+    }
+
+    .image-item {
+      flex: 1 1 100%; /* Для мобильных — по одному изображению на строку */
+      max-width: 300px; /* Ограничиваем максимальную ширину */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    /* Медиазапрос для экранов шире 768px (например, для ПК) */
+    @media (min-width: 768px) {
+      .image-item {
+        flex: 1 1 45%; /* На ПК показываем 2 изображения в ряд */
+      }
+    }
+
+    /* Медиазапрос для экранов шире 1200px (большие мониторы) */
+    @media (min-width: 1200px) {
+      .image-item {
+        flex: 1 1 23%; /* На ПК показываем 4 изображения в ряд */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Главное меню -->
+  <div id="menu">
+    <h1>Furry Beautiful Arts</h1>
+    <button onclick="showContent()"> &rarr;</button>
+  </div>
+
+  <!-- Основной сайт -->
+  <div id="content">
+    <h2 class="italic-text">furry beautiful arts</h2>
+
+    <div class="image-container">
+      <div class="image-item">
+        <img src="IMG_8767.JPG" alt="Image 1">
+        <h1 class="italic-text">art by @POIUU</h1>
+        <a href="IMG_8767.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="IMG_8768.JPG" alt="Image 2">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="IMG_8768.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="IMG_1.JPG" alt="Image 3">
+        <h1 class="italic-text">art by @Citrysofka</h1>
+        <a href="IMG_1.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="IMG_2.JPG" alt="Image 4">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="IMG_2.JPG" download class="download-link">Open</a>
+      </div>
+
+      <div class="image-item">
+        <img src="IMG_3.JPG" alt="Image 5">
+        <h1 class="italic-text">art by @Lucawiouh</h1>
+        <a href="IMG_3.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="IMG_4.JPG" alt="Image 6">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="IMG_4.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="1.JPG" alt="Image 7">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="1.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="2.JPG" alt="Image 8">
+        <h1 class="italic-text">art by @VELK4N</h1>
+        <a href="2.JPG" download class="download-link">Open</a>
+      </div>
+
+      <div class="image-item">
+        <img src="3.JPG" alt="Image 9">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="3.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="4.JPG" alt="Image 10">
+        <h1 class="italic-text">art by @DatKawaiiWolfy</h1>
+        <a href="4.JPG" download class="download-link">Open</a>
+      </div>
+
+      <!-- Дополнительно добавляем новые фото -->
+      <div class="image-item">
+        <img src="5.JPG" alt="Image 11">
+        <h1 class="italic-text">art by LiLaRa aer studio</h1>
+        <a href="5.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="6.JPG" alt="Image 12">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="6.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="7.JPG" alt="Image 13">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="7.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="8.JPG" alt="Image 14">
+        <h1 class="italic-text">art by @Luan Rey</h1>
+        <a href="8.JPG" download class="download-link">Open</a>
+      </div>
+
+      <div class="image-item">
+        <img src="9.JPG" alt="Image 15">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="9.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="10.JPG" alt="Image 16">
+        <h1 class="italic-text">art by @tatujapa</h1>
+        <a href="10.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="11.JPG" alt="Image 17">
+        <h1 class="italic-text">art by @tatujapa</h1>
+        <a href="11.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="12.JPG" alt="Image 18">
+        <h1 class="italic-text">art by @nishadoesart</h1>
+        <a href="12.JPG" download class="download-link">Open</a>
+      </div>
+      
+      <div class="image-item">
+        <img src="13.JPG" alt="Image 19">
+        <h1 class="italic-text">art by @nishadoesart</h1>
+        <a href="13.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="14.JPG" alt="Image 20">
+        <h1 class="italic-text">art by @POIUU</h1>
+        <a href="14.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="15.JPG" alt="Image 21">
+        <h1 class="italic-text">art by @POIUU</h1>
+        <a href="15.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="16.JPG" alt="Image 22">
+        <h1 class="italic-text">art by @POIUU</h1>
+        <a href="16.JPG" download class="download-link">Open</a>
+      </div>
+<div class="image-item">
+        <img src="17.JPG" alt="Image 23">
+        <h1 class="italic-text">art by @POIUU</h1>
+        <a href="17.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="18.JPG" alt="Image 24">
+        <h1 class="italic-text">art by @POIUU</h1>
+        <a href="18.JPG" download class="download-link">Open</a>
+      </div>
+
+      <div class="image-item">
+        <img src="19.JPG" alt="Image 25">
+        <h1 class="italic-text">art by @POIUU</h1>
+        <a href="19.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="20.JPG" alt="Image 26">
+        <h1 class="italic-text">art by @KYOU</h1>
+        <a href="20.JPG" download class="download-link">Open</a>
+      </div>
+
+      <!-- Дополнительно добавляем новые фото -->
+      <div class="image-item">
+        <img src="21.JPG" alt="Image 27">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="21.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="22.JPG" alt="Image 28">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="22.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="23.JPG" alt="Image 29">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="23.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="24.JPG" alt="Image 30">
+        <h1 class="italic-text">art by @knifedragon</h1>
+        <a href="24.JPG" download class="download-link">Open</a>
+      </div>
+
+      <div class="image-item">
+        <img src="25.JPG" alt="Image 31">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="25.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="26.JPG" alt="Image 32">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="26.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="27.JPG" alt="Image 33">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="27.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="28.JPG" alt="Image 34">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="28.JPG" download class="download-link">Open</a>
+      </div>
+      
+      <div class="image-item">
+        <img src="29.JPG" alt="Image 35">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="29.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="30.JPG" alt="Image 36">
+        <h1 class="italic-text">art by @TATSU</h1>
+        <a href="30.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="31.JPG" alt="Image 37">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="31.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="34.jpg" alt="Image 40">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="34.jpg" download class="download-link">Open</a>
+      </div>
+
+      <div class="image-item">
+        <img src="35.JPG" alt="Image 41">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="35.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="36.JPG" alt="Image 42">
+        <h1 class="italic-text">art by @POIUU</h1>
+        <a href="36.JPG" download class="download-link">Open</a>
+      </div>
+
+      <!-- Дополнительно добавляем новые фото -->
+      <div class="image-item">
+        <img src="37.JPG" alt="Image 43">
+        <h1 class="italic-text">art by @POIUU</h1>
+        <a href="37.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="38.JPG" alt="Image 44">
+        <h1 class="italic-text">art by @POIUU</h1>
+        <a href="38.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="39.JPG" alt="Image 45">
+        <h1 class="italic-text">art by @POIUU</h1>
+        <a href="39.JPG" download class="download-link">Open</a>
+      </div>
+      <div class="image-item">
+        <img src="40.JPG" alt="Image 46">
+        <h1 class="italic-text">art by nn</h1>
+        <a href="40.JPG" download class="download-link">Open</a>
+      </div>
+
+    <p>P.S. Over time, photographs, authors, and materials will be added to the site. Existing photographs, including those of the author of these drawings, will be updated. Therefore, "nn" is a temporary option that may change over time. All the authors listed under the pictures are taken from the photos themselves and therefore may not be accurate. The site's author does not want to steal the pictures and therefore tries to find the authors, but he is having very little success. The latest update, October 26, 2025, added about 20 new pieces of art, fixed a bug related to the "open" button, and added support for all devices (tablets, laptops, computers, phones). </p>
+  </div>
+
+  <script>
+    function showContent() {
+      document.getElementById('menu').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
