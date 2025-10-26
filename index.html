@@ -11,7 +11,7 @@
       font-family: Arial, sans-serif;
     }
 
-    /* Главное меню */
+    /* ГѓГ«Г ГўГ­Г®ГҐ Г¬ГҐГ­Гѕ */
     #menu {
       display: flex;
       flex-direction: column;
@@ -20,16 +20,16 @@
       height: 100vh;
     }
 
-    /* Светящийся текст */
+    /* Г‘ГўГҐГІГїГ№ГЁГ©Г±Гї ГІГҐГЄГ±ГІ */
     #menu h1 {
       font-size: 70px;
       color: pink;
       text-shadow: 0 0 15px pink, 0 0 30px hotpink, 0 0 50px hotpink;
       margin-bottom: 40px;
-      background: none; /* убираем фон */
+      background: none; /* ГіГЎГЁГ°Г ГҐГ¬ ГґГ®Г­ */
     }
 
-    /* Кнопка меню */
+    /* ГЉГ­Г®ГЇГЄГ  Г¬ГҐГ­Гѕ */
     #menu button {
       font-size: 28px;
       padding: 15px 40px;
@@ -47,7 +47,7 @@
       transform: scale(1.05);
     }
 
-    /* Контент сайта */
+    /* ГЉГ®Г­ГІГҐГ­ГІ Г±Г Г©ГІГ  */
     #content {
       display: none;
     }
@@ -93,17 +93,17 @@
       background-color: white;
     }
 
-    /* Контейнер для изображений */
+    /* ГЉГ®Г­ГІГҐГ©Г­ГҐГ° Г¤Г«Гї ГЁГ§Г®ГЎГ°Г Г¦ГҐГ­ГЁГ© */
     .image-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px; /* Расстояние между картинками */
+      gap: 20px; /* ГђГ Г±Г±ГІГ®ГїГ­ГЁГҐ Г¬ГҐГ¦Г¤Гі ГЄГ Г°ГІГЁГ­ГЄГ Г¬ГЁ */
     }
 
     .image-item {
-      flex: 1 1 100%; /* Для мобильных — по одному изображению на строку */
-      max-width: 300px; /* Ограничиваем максимальную ширину */
+      flex: 1 1 100%; /* Г„Г«Гї Г¬Г®ГЎГЁГ«ГјГ­Г»Гµ вЂ” ГЇГ® Г®Г¤Г­Г®Г¬Гі ГЁГ§Г®ГЎГ°Г Г¦ГҐГ­ГЁГѕ Г­Г  Г±ГІГ°Г®ГЄГі */
+      max-width: 300px; /* ГЋГЈГ°Г Г­ГЁГ·ГЁГўГ ГҐГ¬ Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­ГіГѕ ГёГЁГ°ГЁГ­Гі */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -117,30 +117,30 @@
       border-radius: 20px;
     }
 
-    /* Медиазапрос для экранов шире 768px (например, для ПК) */
+    /* ГЊГҐГ¤ГЁГ Г§Г ГЇГ°Г®Г± Г¤Г«Гї ГЅГЄГ°Г Г­Г®Гў ГёГЁГ°ГҐ 768px (Г­Г ГЇГ°ГЁГ¬ГҐГ°, Г¤Г«Гї ГЏГЉ) */
     @media (min-width: 768px) {
       .image-item {
-        flex: 1 1 45%; /* На ПК показываем 2 изображения в ряд */
+        flex: 1 1 45%; /* ГЌГ  ГЏГЉ ГЇГ®ГЄГ Г§Г»ГўГ ГҐГ¬ 2 ГЁГ§Г®ГЎГ°Г Г¦ГҐГ­ГЁГї Гў Г°ГїГ¤ */
       }
     }
 
-    /* Медиазапрос для экранов шире 1200px (большие мониторы) */
+    /* ГЊГҐГ¤ГЁГ Г§Г ГЇГ°Г®Г± Г¤Г«Гї ГЅГЄГ°Г Г­Г®Гў ГёГЁГ°ГҐ 1200px (ГЎГ®Г«ГјГёГЁГҐ Г¬Г®Г­ГЁГІГ®Г°Г») */
     @media (min-width: 1200px) {
       .image-item {
-        flex: 1 1 23%; /* На ПК показываем 4 изображения в ряд */
+        flex: 1 1 23%; /* ГЌГ  ГЏГЉ ГЇГ®ГЄГ Г§Г»ГўГ ГҐГ¬ 4 ГЁГ§Г®ГЎГ°Г Г¦ГҐГ­ГЁГї Гў Г°ГїГ¤ */
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Главное меню -->
+  <!-- ГѓГ«Г ГўГ­Г®ГҐ Г¬ГҐГ­Гѕ -->
   <div id="menu">
     <h1>Furry Beautiful Arts</h1>
     <button onclick="showContent()"> &rarr;</button>
   </div>
 
-  <!-- Основной сайт -->
+  <!-- ГЋГ±Г­Г®ГўГ­Г®Г© Г±Г Г©ГІ -->
   <div id="content">
     <h2 class="italic-text">furry beautiful arts</h2>
 
@@ -198,7 +198,7 @@
         <a href="4.JPG" download class="download-link">Open</a>
       </div>
 
-      <!-- Дополнительно добавляем новые фото -->
+      <!-- Г„Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г® Г¤Г®ГЎГ ГўГ«ГїГҐГ¬ Г­Г®ГўГ»ГҐ ГґГ®ГІГ® -->
       <div class="image-item">
         <img src="5.JPG" alt="Image 11">
         <h1 class="italic-text">art by LiLaRa aer studio</h1>
@@ -257,9 +257,9 @@
         <a href="15.JPG" download class="download-link">Open</a>
       </div>
       <div class="image-item">
-        <img src="16.JPG" alt="Image 22">
+        <img src="16.jpg" alt="Image 22">
         <h1 class="italic-text">art by @POIUU</h1>
-        <a href="16.JPG" download class="download-link">Open</a>
+        <a href="16.jpg" download class="download-link">Open</a>
       </div>
 <div class="image-item">
         <img src="17.JPG" alt="Image 23">
@@ -283,7 +283,7 @@
         <a href="20.JPG" download class="download-link">Open</a>
       </div>
 
-      <!-- Дополнительно добавляем новые фото -->
+      <!-- Г„Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г® Г¤Г®ГЎГ ГўГ«ГїГҐГ¬ Г­Г®ГўГ»ГҐ ГґГ®ГІГ® -->
       <div class="image-item">
         <img src="21.JPG" alt="Image 27">
         <h1 class="italic-text">art by nn</h1>
@@ -358,7 +358,7 @@
         <a href="36.JPG" download class="download-link">Open</a>
       </div>
 
-      <!-- Дополнительно добавляем новые фото -->
+      <!-- Г„Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г® Г¤Г®ГЎГ ГўГ«ГїГҐГ¬ Г­Г®ГўГ»ГҐ ГґГ®ГІГ® -->
       <div class="image-item">
         <img src="37.JPG" alt="Image 43">
         <h1 class="italic-text">art by @POIUU</h1>
@@ -390,4 +390,5 @@
     }
   </script>
 </body>
+
 </html>
